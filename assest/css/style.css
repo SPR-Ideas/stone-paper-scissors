@@ -1,5 +1,5 @@
 body{
-    width : 93vw !important;
+    /* width : 93vw !important; */
 }
 .view{
     width:100%;
@@ -10,7 +10,7 @@ body{
     flex: 0 0 50%;
     border: 1px solid rgb(254, 230, 166) ;
     height: 50vh;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 .name{
     flex: 0 0 50%;
@@ -51,12 +51,15 @@ body{
 
 @media (max-width:567px){
     body{
-        width: 90vw !important;
+        /* width: 90vw !important; */
+        height: 80vh;
         display: flex;
         /* justify-content: center; */
         align-items: center;
     }
-
+    .overall{
+        width: 100%;
+    }
     .box{
         height: 20vh;
     }
