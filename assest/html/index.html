@@ -8,7 +8,16 @@
 </head>
 <link rel="stylesheet" href="/assest/css/style.css">
 <body>
+
+
+        <nav >
+            <h2> Stone Paper Sissor </h2>
+        </nav>
+
     <div class="overall">
+        <div class="warpper">
+
+
         <div class="view">
             <div class="name">CPU : <span id="c-score"></span> </div>
                 <div class="name">User : <span id="u-score"></span> </div>
@@ -34,12 +43,12 @@
         </div>
 
         <div class="mobile-view select-options">
-            <button class="options-btn" id="stone">stone</button>
-            <button class="options-btn" id="paper">paper</button>
-            <button class="options-btn" id="Scissors">scissors</button>
+            <button class="options-btn" id="stone"onclick="userInput('stone')" >stone</button>
+            <button class="options-btn" id="paper" onclick="userInput('paper')">paper</button>
+            <button class="options-btn" id="Scissor" onclick="userInput('sicssor')">scissors</button>
         </div>
-
     </div>
+</div>
 
 
 </body>
