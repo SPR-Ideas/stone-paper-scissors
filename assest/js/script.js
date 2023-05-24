@@ -11,6 +11,21 @@ let ComputerScoreDisplay = document.getElementById("c-score");
 ComputerScoreDisplay.innerText = " "+ ComputerScore;
 userScoreDispaly.innerText = " " +userScore;
 
+
+function AnnounceWinner() {
+    if (ComputerScore == 10 || userScore== 10){
+        if (ComputerScore==10){
+            alert("CPU WON THE GAME");
+            window.location.reload();
+        }
+        if(userScore==10){
+            alert("USER WON THE GAME");
+            window.location.reload();
+        }
+    }
+}
+
+
 function userInput(input){
     const choices = ["stone", "paper", "sicssor"];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)]
@@ -35,4 +50,5 @@ function userInput(input){
         ComputerScoreDisplay.innerHTML = " " +ComputerScore;
         console.log("cpu");
     }
+    AnnounceWinner();
 }
