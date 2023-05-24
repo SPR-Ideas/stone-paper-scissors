@@ -8,7 +8,40 @@
 </head>
 <link rel="stylesheet" href="/assest/css/style.css">
 <body>
-    
+    <div class="overall">
+        <div class="view">
+            <div class="name">CPU : <span id="c-score"></span> </div>
+                <div class="name">User : <span id="u-score"></span> </div>
+        </div>
+        <div class="view" >
+            <div class="box" >
+                <img id="CPU" style="height: 90%; width: 90%;" src="https://media.istockphoto.com/vectors/rock-paper-scissors-vector-illustration-vector-id1056840214?k=6&m=1056840214&s=612x612&w=0&h=zujh4C6sdhy0SLGcXeB5GaK_EFtJlb4si3utTWdqdcc=" alt="">
+            </div>
+            <div class="box" >
+                <img id="USER" style="height: 90%; width: 90%;" src="https://media.istockphoto.com/vectors/rock-paper-scissors-vector-illustration-vector-id1056840214?k=6&m=1056840214&s=612x612&w=0&h=zujh4C6sdhy0SLGcXeB5GaK_EFtJlb4si3utTWdqdcc=" alt="">
+            </div>
+
+        </div>
+
+        <div class="mobile-view-hidden select-options">
+            <div class="options" id="stone" onclick="userInput('stone')"><img src="https://th.bing.com/th/id/R.8b6cdbc1181159e8db8d53c867962de7?rik=bZkUizfuazZvhA&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery%2fn757015.png&ehk=rUEcocz689rNLJs%2fTs2Fu8CRNrG2a5RiiN0Sn1JiDyM%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            <div class="options" id="paper" onclick="userInput('paper')">
+                <img src="https://th.bing.com/th/id/OIP.faIypYq81lubKAFz_SRp-gHaIL?pid=ImgDet&rs=1" alt="">
+            </div>
+            <div class="options" id="Scissors" onclick="userInput('sicssor')">
+                <img src="https://th.bing.com/th/id/R.2ed32b6ebb490bed78aaa38a57888148?rik=EYK0A5iQZi8N%2bw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fnTB%2fBd6%2fnTBBd6anc.png&ehk=o5eK%2fTCo7bHLGAH%2bg%2bKf8VJgRULjex9Gm8DhDXZh%2fTI%3d&risl=&pid=ImgRaw&r=0" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="mobile-view select-options">
+            <button class="options-btn" id="stone">stone</button>
+            <button class="options-btn" id="paper">paper</button>
+            <button class="options-btn" id="Scissors">scissors</button>
+        </div>
+
+    </div>
+
+
 </body>
 <script src="/assest/js/script.js"></script>
 </html>
