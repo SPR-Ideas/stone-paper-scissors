@@ -57,7 +57,10 @@ nav{
     border: 1px solid teal;
     padding : 5px 1rem 5px 1rem;
 }
-
+.options-btn:hover{
+    background-color: teal ;
+    color: white;
+  }
 
 @media (max-width:567px){
     .warpper{
